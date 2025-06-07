@@ -1,6 +1,6 @@
 # 📦 Project Name
 
-> Image filtering in image processing.
+> Adventure game.
 
 ---
 
@@ -20,15 +20,16 @@
 
 ## 📝 About
 
-> This is a simple tool to filter image by many types.
+> Control character by panel and explore the world.
 
 ---
 
 ## ✨ Features
 
-- ✅ Add noise with density (Gaussian, Poisson, Salt & Pepper, Speckle)
-- ✅ Noise removal filter by size
-- ✅ Enhancement
+- ✅ Save progress, then load current progress later (*.sav)
+- ✅ Reset game
+- ✅ Console display info of game
+- ✅ Buttons to control character
 
 ---
 
@@ -37,21 +38,32 @@
 ### Prerequisites
 
 - List software dependencies or system requirements here:
-  - MATLAB
+  - C#
+  - Microsoft Visual Studio
 
 ### Source
 
-- *.fig: design GUI
-- *.m: main app
+- *.sln: solution workspace
+- Adventure.cs: main app
+- AdvConsts.cs: define constants
+- Mainform.cs: design GUI
+- gameclasses/*.cs: define objects 
 
 ### Usage
 
-- Open file *.m in MATLAB
-- Change folder to location containing source code
-- Run
-- When app window opens, choose image file first
-- Apply custom image filters (fill mandatory parameters) and see results 
+- Open workspace by .sln file
+- In Solution Explorer, right-click to project, **Set as Startup Project**
+- Run app
+- File menu (save progress, load progress, reset game, exit game)
+- How to play:
+  - W/N/E/S: move
+  - Do to Object... input: enter name of object
+  - Take: take object and save to inventory
+  - Drop: drop object out of inventory
+  - Look at: look at characteristic of object
+  - Look: look around the place
+  - Inventory: check inventory
 
 ### Reference
 
-- 
+- https://www.udemy.com/course/learn-c-sharp-programming-in-ten-easy-steps/
